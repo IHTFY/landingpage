@@ -1,177 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-<link rel="shortcut icon" href="/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="MyWebSite" />
-<link rel="manifest" href="/favicon/site.webmanifest" />
-<title>Francisco & Marianne Wedding Photos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Google Font for elegant cursive -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
-<style>
-  :root {
-    --bg-lilac: #f4efff;
-    --bg-blue: #d0d0ff;
-    --accent: #3b2d5f;
-    --button-primary: #b49fff;
-    --button-secondary: #5a6cc0;
-    --button-shadow: rgba(0,0,0,0.15);
-    --text-main: #3b2d5f;
-  }
+    <title>Francisco & Marianne Wedding Photos</title>
 
-  * { box-sizing: border-box; margin:0; padding:0; }
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  html, body {
-    height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-lilac);
-    overflow: hidden;
-  }
+  <body>
+    <div class="card">
+      <div class="logo">
+        <!-- Monogram SVG -->
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 408.81 447.87"
+        >
+          <path
+            d="M454.4,151.92V159c-4.9,0-9.7-.05-14.5,0-17.88.2-29.66,11.55-29.72,29.33q-.24,72.63,0,145.25c.06,17.82,11.82,29,29.79,29.11,4.63,0,9.27,0,14.35,0v7.65h-6.74c-23.59,0-47.19-.08-70.79.14-4.51,0-5.95-1.23-5.94-5.83q.18-94.28.06-188.57V151.92Z"
+            transform="translate(-45.6 -26.06)"
+          />
+          <path
+            d="M45.6,159v-7.56h6.2c21.56,0,43.13-.15,64.69.17a13.84,13.84,0,0,1,8.84,3.77c15,15.51,29.67,31.3,44.29,47.15a12.6,12.6,0,0,1,3.23,6.79c2.17,21.84,7.11,42.9,16.81,62.7a14.75,14.75,0,0,1,.43,3c-4.58-4.82-8.42-8.8-12.2-12.84-25.74-27.46-51.8-54.64-77.07-82.52C87.7,165.2,72.3,157.93,52.87,159,50.67,159.13,48.45,159,45.6,159Z"
+            transform="translate(-45.6 -26.06)"
+          />
+          <path
+            d="M91.88,202.54c6.23,6.6,12.52,13.13,18.59,19.86.94,1,1.21,3,1.21,4.5q.06,69.89,0,139.77a29.56,29.56,0,0,1-.39,3.24H45.66v-7.19H58.81c21.11,0,31.76-10.72,31.76-32q0-60.12,0-120.24v-7.27Z"
+            transform="translate(-45.6 -26.06)"
+          />
+          <path
+            d="M283.48,91.49h6.29V184.2h-5.31c-6.33-32.43-6.33-32.43-41.53-38.58V128.69C269.38,130.71,281.78,116.82,283.48,91.49Z"
+            transform="translate(-45.6 -26.06)"
+          />
+          <path
+            d="M264.26,258.16h0l13.86,20.09Q313.58,238.65,349,199c1.56-1.76,3.55-4,3.66-6,.41-8.45.17-16.94.17-27Z"
+            transform="translate(-45.6 -26.06)"
+          />
+          <path
+            d="M138.47,26.06v7.06c5.73,0,11.18,0,16.62,0,23.87.25,35,11.73,34.9,35.47-.14,37.24.36,74.49-.17,111.73-.63,44.53,11.63,84.68,38.49,120.3,2.93,3.9,5.78,7.88,8.49,11.93,13.14,19.58,27,38.75,39.1,58.95,11.59,19.32,8.42,44.6-5.72,61.79-18.68,22.69-51.61,22.48-70-.46-17.26-21.56-16.27-52,2.52-72.78,8.3-9.17,16.87-18.09,25.54-27.35-5-5.49-9.69-10.55-14.71-16-9.06,9.67-17.78,19-26.55,28.33-17.29,18.37-24.3,40-20.63,65,5.73,39,43.24,67.59,83.31,63.51,40.7-4.14,71.63-40.22,68.92-80.09-1.14-16.77-7.45-31.53-16.51-45.32q-18.24-27.78-36.64-55.5l.07-.08-14-21.85c-1-1.47-1.72-2.56-2.37-3.64-12.73-21.19-17.82-44.41-17.89-68.84-.16-50.27-.11-100.54-.12-150.81a39.52,39.52,0,0,1,.51-4.4c2.8,0,5.21,0,7.62,0,25.84.26,51.7-.05,77.5,1,23.87.93,40.08,13.1,47.15,36.4,1.77,5.84,3.58,11.68,5,17.6.95,4,2.67,5.13,6.1,3.27V26.06Z"
+            transform="translate(-45.6 -26.06)"
+          />
+        </svg>
+      </div>
 
-  body::before {
-    content: "";
-    position: fixed;
-    top:0; left:0; width:100%; height:100%;
-    background: 
-      linear-gradient(135deg, rgba(180,159,255,0.2) 0%, rgba(90,108,192,0.2) 100%),
-      radial-gradient(ellipse at center, rgba(255,255,255,0.08) 0%, transparent 70%),
-      repeating-linear-gradient(
-        45deg,
-        rgba(255,255,255,0.05) 0px,
-        rgba(255,255,255,0.05) 2px,
-        transparent 2px,
-        transparent 10px
-      ),
-      linear-gradient(to bottom right, var(--bg-lilac), var(--bg-blue));
-    background-blend-mode: overlay, overlay, overlay, normal;
-    z-index: -1;
-  }
+      <h1>Francisco & Marianne</h1>
+      <div class="subtitle">Manila, Philippines • February 15, 2026</div>
+      <div class="divider"></div>
 
-  .card {
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.85);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    overflow-y: auto;
-  }
+      <p class="instruction">
+        Please upload and enjoy photos & videos from today
+      </p>
 
-  .logo svg {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 18px;
-    fill: var(--accent);
-  }
-
-  h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2.8rem;
-    color: var(--accent);
-    line-height: 1.1;
-    margin-bottom: 12px;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    color: var(--accent);
-    margin-bottom: 24px;
-  }
-
-  .divider {
-    width: 50px;
-    height: 2px;
-    background: var(--accent);
-    margin: 18px auto 28px;
-    border-radius: 2px;
-    opacity: 0.6;
-  }
-
-  .instruction {
-    font-size: 1.1rem;
-    color: var(--accent);
-    margin-bottom: 32px;
-  }
-
-  .actions {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  a.button {
-    display: block;
-    padding: 16px 20px;
-    border-radius: 14px;
-    text-decoration: none;
-    font-size: 1.15rem;
-    font-weight: 600;
-    text-align: center;
-    transition: all 0.25s ease;
-  }
-
-  a.primary {
-    background: linear-gradient(135deg, var(--button-primary), var(--button-secondary));
-    color: #fff;
-    box-shadow: 0 6px 14px var(--button-shadow);
-  }
-  a.primary:hover {
-    background: linear-gradient(135deg, var(--button-secondary), var(--button-primary));
-  }
-
-  a.secondary {
-    background: transparent;
-    color: var(--button-secondary);
-    border: 2px solid var(--button-secondary);
-  }
-  a.secondary:hover {
-    background: var(--button-secondary);
-    color: #fff;
-  }
-
-  @media (min-width: 700px){
-    .card { padding: 60px 40px; }
-  }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="logo">
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.81 447.87"><defs><style>.cls-1{fill:#000000;}</style></defs><path class="cls-1" d="M454.4,151.92V159c-4.9,0-9.7-.05-14.5,0-17.88.2-29.66,11.55-29.72,29.33q-.24,72.63,0,145.25c.06,17.82,11.82,29,29.79,29.11,4.63,0,9.27,0,14.35,0v7.65h-6.74c-23.59,0-47.19-.08-70.79.14-4.51,0-5.95-1.23-5.94-5.83q.18-94.28.06-188.57V151.92Z" transform="translate(-45.6 -26.06)"/><path class="cls-1" d="M45.6,159v-7.56h6.2c21.56,0,43.13-.15,64.69.17a13.84,13.84,0,0,1,8.84,3.77c15,15.51,29.67,31.3,44.29,47.15a12.6,12.6,0,0,1,3.23,6.79c2.17,21.84,7.11,42.9,16.81,62.7a14.75,14.75,0,0,1,.43,3c-4.58-4.82-8.42-8.8-12.2-12.84-25.74-27.46-51.8-54.64-77.07-82.52C87.7,165.2,72.3,157.93,52.87,159,50.67,159.13,48.45,159,45.6,159Z" transform="translate(-45.6 -26.06)"/><path class="cls-1" d="M91.88,202.54c6.23,6.6,12.52,13.13,18.59,19.86.94,1,1.21,3,1.21,4.5q.06,69.89,0,139.77a29.56,29.56,0,0,1-.39,3.24H45.66v-7.19H58.81c21.11,0,31.76-10.72,31.76-32q0-60.12,0-120.24v-7.27Z" transform="translate(-45.6 -26.06)"/><path class="cls-1" d="M283.48,91.49h6.29V184.2h-5.31c-6.33-32.43-6.33-32.43-41.53-38.58V128.69C269.38,130.71,281.78,116.82,283.48,91.49Z" transform="translate(-45.6 -26.06)"/><path class="cls-1" d="M264.26,258.16h0l13.86,20.09Q313.58,238.65,349,199c1.56-1.76,3.55-4,3.66-6,.41-8.45.17-16.94.17-27Z" transform="translate(-45.6 -26.06)"/><path class="cls-1" d="M138.47,26.06v7.06c5.73,0,11.18,0,16.62,0,23.87.25,35,11.73,34.9,35.47-.14,37.24.36,74.49-.17,111.73-.63,44.53,11.63,84.68,38.49,120.3,2.93,3.9,5.78,7.88,8.49,11.93,13.14,19.58,27,38.75,39.1,58.95,11.59,19.32,8.42,44.6-5.72,61.79-18.68,22.69-51.61,22.48-70-.46-17.26-21.56-16.27-52,2.52-72.78,8.3-9.17,16.87-18.09,25.54-27.35-5-5.49-9.69-10.55-14.71-16-9.06,9.67-17.78,19-26.55,28.33-17.29,18.37-24.3,40-20.63,65,5.73,39,43.24,67.59,83.31,63.51,40.7-4.14,71.63-40.22,68.92-80.09-1.14-16.77-7.45-31.53-16.51-45.32q-18.24-27.78-36.64-55.5l.07-.08-14-21.85c-1-1.47-1.72-2.56-2.37-3.64-12.73-21.19-17.82-44.41-17.89-68.84-.16-50.27-.11-100.54-.12-150.81a39.52,39.52,0,0,1,.51-4.4c2.8,0,5.21,0,7.62,0,25.84.26,51.7-.05,77.5,1,23.87.93,40.08,13.1,47.15,36.4,1.77,5.84,3.58,11.68,5,17.6.95,4,2.67,5.13,6.1,3.27V26.06Z" transform="translate(-45.6 -26.06)"/></svg>
+      <div class="actions">
+        <a href="#" id="uploadBtn" class="button primary"
+          >Upload Photos & Videos</a
+        >
+        <a href="#" id="viewBtn" class="button secondary">View Photos</a>
+      </div>
     </div>
 
-    <h1>Francisco & Marianne</h1>
-    <div class="subtitle">Manila, Philippines • February 15, 2026</div>
-    <div class="divider"></div>
-    <p class="instruction">Please upload and enjoy photos & videos from today</p>
-    <div class="actions">
-      <a href="#" id="uploadBtn" class="button primary">Upload Photos & Videos</a>
-      <a href="#" id="viewBtn" class="button secondary">View Photos</a>
-    </div>
-  </div>
-
-  <script>
-    // Base64-encoded URLs
-    const uploadURL = atob('aHR0cHM6Ly96aXBsaW5lLmZyYW5raWVtZXJjYWRvLmNvbS9nby91cGxvYWQ=');
-    const viewURL = atob('aHR0cHM6Ly9pbW1pY2guZnJhbmtpZW1lcmNhZG8uY29tL3Mvd2VkZGluZw==');
-
-    // Assign to buttons
-    document.getElementById('uploadBtn').href = uploadURL;
-    document.getElementById('viewBtn').href = viewURL;
-  </script>
-</body>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
